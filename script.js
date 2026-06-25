@@ -1,9 +1,9 @@
 const sets = [
-  { name: 'Volstone Microphone', year: '2026', client: '오투스튜디오', sketch: 'assets/product-01-sketch.png', real: 'assets/product-01-real2.png' },
-  { name: 'Arli Easy Nest', year: '2026', client: '오투스튜디오', sketch: 'assets/products/sketch/arli-easy-nest.png', real: 'assets/products/real/arli-easy-nest.png' },
-  { name: 'HL Mando Module', year: '2026', client: '오투스튜디오', sketch: 'assets/products/sketch/electronic-3.png', real: 'assets/products/real/electronic-3.png', model: 'assets/models/1031.glb' },
-  { name: 'Home AI Hub', year: '2026', client: '오투스튜디오', sketch: 'assets/products/sketch/electronic-4.png', real: 'assets/products/real/electronic-4.png' },
-  { name: 'Wearable Controller', year: '2026', client: '오투스튜디오', sketch: 'assets/products/sketch/electronic-5.png', real: 'assets/products/real/electronic-5.png' }
+  { name: 'Volstone Microphone', year: '2026', client: '오투스튜디오', sketch: 'assets/web/product-01-sketch.webp', real: 'assets/web/product-01-real.webp' },
+  { name: 'Arli Easy Nest', year: '2026', client: '오투스튜디오', sketch: 'assets/web/products/sketch/arli-easy-nest.webp', real: 'assets/web/products/real/arli-easy-nest.webp' },
+  { name: 'HL Mando Module', year: '2026', client: '오투스튜디오', sketch: 'assets/web/products/sketch/electronic-3.webp', real: 'assets/web/products/real/electronic-3.webp', model: 'assets/models/1031.glb' },
+  { name: 'Home AI Hub', year: '2026', client: '오투스튜디오', sketch: 'assets/web/products/sketch/electronic-4.webp', real: 'assets/web/products/real/electronic-4.webp' },
+  { name: 'Wearable Controller', year: '2026', client: '오투스튜디오', sketch: 'assets/web/products/sketch/electronic-5.webp', real: 'assets/web/products/real/electronic-5.webp' }
 ];
 
 const hero = document.getElementById('hero');
