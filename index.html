@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OTWO Studio | Make it real</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body class="is-intro">
+  <div class="intro-screen" id="introScreen" aria-hidden="true">
+    <img
+      class="intro-logo"
+      src="260516 오투스튜디오_프린트뱅크인쇄양식_명함2_아웃라인-2-08.png"
+      alt=""
+    />
+  </div>
+
+  <header class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="OTWO Studio home">
+      <img
+        src="260516 오투스튜디오_프린트뱅크인쇄양식_명함2_아웃라인-2-06.png"
+        alt="OTWO Design Studio"
+      />
+    </a>
+    <button class="menu" aria-label="설명 열기">=</button>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero" aria-label="Sketch to render experience">
+      <div class="studio-scene" aria-hidden="true">
+        <img src="assets/studio-transition.png" alt="" />
+      </div>
+
+      <aside class="side-ui side-ui-left" aria-hidden="true">
+        <div class="panel-tabs">
+          <strong>Scene</strong>
+          <span>Materials</span>
+          <button aria-label="Add item">+</button>
+        </div>
+        <div class="scene-group">
+          <p>Scene</p>
+          <div class="scene-row"><span>Camera 1</span><b></b></div>
+          <div class="scene-row"><span>Environment</span><b></b></div>
+        </div>
+        <div class="scene-group">
+          <p>Product</p>
+          <div class="scene-row material-row active"><i class="swatch orange"></i><span>Body</span><b></b></div>
+          <div class="scene-row material-row"><i class="swatch glass"></i><span>Glass</span><b></b></div>
+          <div class="scene-row material-row"><i class="swatch dark"></i><span>Wheels</span><b></b></div>
+          <div class="scene-row material-row"><i class="swatch light"></i><span>Lights</span><b></b></div>
+          <div class="scene-row material-row"><i class="swatch trim"></i><span>Trim</span><b></b></div>
+        </div>
+        <div class="scene-group">
+          <p>Ground Plane</p>
+          <div class="scene-row"><span>Reflection</span><b></b></div>
+        </div>
+      </aside>
+
+      <aside class="side-ui side-ui-right" aria-hidden="true">
+        <div class="panel-tabs">
+          <strong>Material</strong>
+          <span>Library</span>
+        </div>
+        <div class="material-applied">
+          <img src="assets/product-01-real2.png" alt="" />
+          <div>
+            <strong>Car Paint - Sunset Orange</strong>
+            <span><i class="swatch orange"></i> Paint</span>
+          </div>
+        </div>
+        <div class="material-chips">
+          <span>All</span>
+          <span class="active">Paint</span>
+          <span>Metal</span>
+          <span>Plastic</span>
+          <span>Glass</span>
+        </div>
+        <div class="material-dots">
+          <i class="swatch orange active"></i>
+          <i class="swatch pearl"></i>
+          <i class="swatch graphite"></i>
+          <i class="swatch red"></i>
+          <i class="swatch blue"></i>
+        </div>
+        <div class="properties">
+          <p>Material Properties</p>
+          <label>Roughness <i style="--value: 42%"></i><em>0.18</em></label>
+          <label>Metalness <i style="--value: 12%"></i><em>0.00</em></label>
+          <label>Texture Scale <i style="--value: 68%"></i><em>1.00</em></label>
+        </div>
+        <div class="properties">
+          <p>Lighting / Environment</p>
+          <label>Intensity <i style="--value: 78%"></i><em>1.25</em></label>
+          <label>Ground Reflections <i style="--value: 62%"></i><em>0.60</em></label>
+        </div>
+        <button class="render-button">Render</button>
+      </aside>
+        </div>
+      </aside>
+
+      <p class="drag-label">Drag</p>
+
+      <h1 class="headline" aria-label="Make it real">
+        <span>Make</span>
+        <span>it real</span>
+      </h1>
+
+      <div class="hero-years" id="heroYears" aria-hidden="true">
+        <span class="year-count" data-from="2000" data-to="2019">2000</span>
+        <i></i>
+        <span class="year-count" data-from="2000" data-to="2026">2000</span>
+      </div>
+
+<p class="hero-copy">PRODUCT LAB PROCESS '26</p>
+      <div class="hero-actions" aria-label="Primary actions">
+        <a class="hero-primary" href="#top">GO | 스케치를 렌더로 전환</a>
+        <a class="hero-secondary" href="#top">AI 디자인 워크플로우</a>
+      </div>
+
+      <section class="stage" id="stage" aria-label="Interactive product reveal">
+        <img class="side side-left" id="sideLeft" src="assets/side-left.svg" alt="" />
+        <div class="carousel-shell" id="carouselShell">
+          <div class="product-track" id="productTrack" aria-live="polite"></div>
+        </div>
+        <img class="side side-right" id="sideRight" src="assets/side-right.svg" alt="" />
+      </section>
+
+      <div class="floating-selector selector-left" id="leftSelector">
+        <span id="prevFloatName">Industrial Chair</span>
+        <button class="float-arrow" id="prevBtn" aria-label="Previous product">&larr;</button>
+      </div>
+
+      <div class="floating-selector selector-right" id="rightSelector">
+        <button class="float-arrow dark" id="nextBtn" aria-label="Next product">&rarr;</button>
+        <span id="nextFloatName">Smart Visor</span>
+      </div>
+
+      <div class="cursor-box" id="cursorBox" aria-hidden="true">
+        <span class="corner tl"></span>
+        <span class="corner tr"></span>
+        <span class="corner bl"></span>
+        <span class="corner br"></span>
+      </div>
+
+      <div class="cursor-label" id="cursorLabel" aria-hidden="true"></div>
+
+      <div class="count"><span id="currentNo">01</span> / <span id="totalNo">05</span></div>
+      <div class="active-product-name" id="activeName">Concept Vehicle</div>
+      <div class="showcase-frame" aria-hidden="true">
+        <span class="showcase-corner tl"></span>
+        <span class="showcase-corner tr"></span>
+        <span class="showcase-corner bl"></span>
+        <span class="showcase-corner br"></span>
+        <div class="showcase-label">
+          <strong id="showcaseName">Volstone Microphone</strong>
+          <span id="showcaseMeta">2026 | 오투스튜디오</span>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <i></i>
+      </div>
+
+      <div class="scroll-progress" id="scrollProgress" aria-hidden="true">
+        <span id="scrollProgressText">Scroll</span>
+        <b></b>
+        <i></i>
+      </div>
+
+      <a class="chat-dot" href="#top" aria-label="Vizcom help">vizcom</a>
+
+      <section class="client-scene" aria-label="Ideation toolkit preview">
+        <div class="client-inner">
+          <div class="client-marquee" aria-hidden="true">
+            <div class="client-track">
+              <span>foxtail</span>
+              <span>GENERAC</span>
+              <span>GFG STYLE</span>
+              <span>GoPro</span>
+              <span>GSM OUTDOORS</span>
+              <span>HAIX</span>
+              <span>HONDA</span>
+              <span>ISA-TRAESKO</span>
+              <span>foxtail</span>
+              <span>GENERAC</span>
+              <span>GFG STYLE</span>
+              <span>GoPro</span>
+              <span>GSM OUTDOORS</span>
+              <span>HAIX</span>
+              <span>HONDA</span>
+              <span>ISA-TRAESKO</span>
+            </div>
+          </div>
+
+          <div class="toolkit-copy">
+            <h2>Your ideation toolkit</h2>
+            <p>From your vision, through variations, and into reality.<br />Vizcom brings clarity to the messy middle of idea generation</p>
+            <div class="toolkit-actions">
+              <a href="#top">Learn more</a>
+              <a href="#top">Get Started</a>
+            </div>
+          </div>
+
+          <div class="toolkit-steps" aria-hidden="true">
+            <span>Sketch</span>
+            <span>Render</span>
+            <span>Iterate</span>
+            <span>Make it real</span>
+          </div>
+
+          <div class="toolkit-preview" aria-hidden="true">
+            <div class="preview-panel preview-left">
+              <div class="preview-bar"><span>Layers</span><b>Assets</b><i>+</i></div>
+              <div class="preview-row">
+                <img src="assets/product-01-sketch.png" alt="" />
+                <p><strong>Sketch</strong><em>N 100%</em></p>
+              </div>
+              <div class="preview-row">
+                <i></i>
+                <p><strong>Canvas</strong><em>Settings</em></p>
+              </div>
+            </div>
+            <div class="preview-canvas"></div>
+            <div class="preview-panel preview-right">
+              <div class="preview-bar"><span>Modify</span><i>...</i></div>
+              <p class="preview-label">Prompt</p>
+              <div class="preview-prompt">Describe your design's form, proportions, colors, and materials</div>
+              <div class="preview-chips">
+                <span>Change...</span>
+                <span>Make...</span>
+                <span>Remove...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
