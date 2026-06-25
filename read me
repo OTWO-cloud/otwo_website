@@ -1,0 +1,30 @@
+OTWO Studio 메인씬 v8
+
+이번 수정 사항
+1) 버튼 위치 변경
+- 이전/다음 버튼을 제품 좌우 중앙 근처로 이동했습니다.
+- 화면에서 보낸 빨간 표시처럼 제품과 제품 사이에 떠 있는 버튼 느낌입니다.
+
+2) 제품 이동 방식 변경
+- 버튼을 누르면 이미지가 단순 교체되지 않고,
+  좌우에 있던 제품이 슬라이드되어 자연스럽게 가운데로 들어옵니다.
+
+3) 기존 효과 유지
+- 마우스 따라다니는 큰 사각형 reveal
+- 제품 밖에서는 작은 네모 커서
+- 사각형 4점 핸들
+- 제품명 말풍선
+- 마우스 이동에 따른 전체 화면 패럴랙스/각도 효과
+
+수정 위치
+- 제품명/이미지: script.js > sets 배열
+- 버튼 위치: style.css > .selector-left / .selector-right
+- 제품 이동 간격: script.js > layoutCards() > spacing
+- 전환 속도: style.css > .product-card transition, script.js > changeProduct() 1360ms
+- 리빌 사각형 크기: style.css > .cursor-box.is-inside, script.js > revealW/revealH
+
+
+V9 변경사항
+- reveal 사각형을 정사각형으로 변경
+- 기존 큰 가로형 대비 약 20% 축소
+- 실제 이미지가 보이는 clip 영역도 정사각형 크기에 맞춤
